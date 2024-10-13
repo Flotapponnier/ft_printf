@@ -6,7 +6,7 @@
 /*   By: ftapponn <ftapponn@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:09:46 by ftapponn          #+#    #+#             */
-/*   Updated: 2024/10/13 17:31:10 by ftapponn         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:50:31 by ftapponn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_find_bonus_format(char c, va_list ap)
 	else if (c == 'o')
 		count = ft_print_octal(va_arg(ap, int));
 	else if (c == 'f')
-		count = ft_print_float(va_arg(ap, float));
+		count = ft_print_float(va_arg(ap, double));
 	return (count);
 }
 
@@ -34,7 +34,7 @@ int	ft_find_format(char c, va_list ap)
 	int	count;
 
 	count = 0;
-	else if (c == 's')
+	if (c == 's')
 		count = ft_print_string(va_arg(ap, char *));
 	else if (c == 'd' || c == 'i')
 		count = ft_print_digit(va_arg(ap, int));
