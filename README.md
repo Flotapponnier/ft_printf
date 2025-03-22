@@ -1,4 +1,4 @@
-#ft_printf
+# ft_printf
 The ft_printf project involves recreating a custom version of the printf function in C. This function is used to print formatted strings, using specifiers like %s, %d, %x, etc.
 
 ## Project Objective
@@ -66,5 +66,5 @@ Each write call is wrapped with an if statement to ensure it returns the expecte
 
 The program uses va_start, va_arg, and va_end to access the variadic arguments, and processes them based on the specifiers encountered in the format string.
 
-Conclusion
+## Conclusion
 This project demonstrates how to implement a variadic function (ft_printf) that handles multiple types of arguments and outputs them in a formatted way. The careful handling of write with error checking ensures the program is secure, and the use of variadic arguments makes the function flexible and powerful.
